@@ -5,8 +5,6 @@
     padding-left: 2%;
     padding-bottom: 20px;
     
-
-
 }
 #error{
     border: 2px solid red;
@@ -24,6 +22,7 @@
 }
 .submit__btn{
     background-color: #3f3f3f;
+    color: white;
     border: 3px solid rgb(192, 6, 192);
     height: 4rem;
     width: 20rem;
@@ -33,9 +32,4 @@
 }
 .my__form{
     margin-top: 40px;
-}
-@media (max-width:768px) {
-    .container-fluid{
-        padding-left: 15%;
-    }
 }
