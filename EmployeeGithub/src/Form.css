@@ -1,6 +1,41 @@
-.container{
-    margin-left:  0;
+.container-fluid{
+   
+    border-bottom: 3px solid rgb(192, 6, 192);
+    margin-top: 20px; 
+    padding-left: 2%;
+    padding-bottom: 20px;
+    
+
+
 }
 #error{
-    color: red;
+    border: 2px solid red;
+}
+.form__input{
+    background-color: #3f3f3f;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    height: 3rem;
+    width: 20rem;
+    padding: 0.8rem;
+    font-weight: 500;
+    font-size: large;
+}
+.submit__btn{
+    background-color: #3f3f3f;
+    border: 3px solid rgb(192, 6, 192);
+    height: 4rem;
+    width: 20rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    font-size: large;
+}
+.my__form{
+    margin-top: 40px;
+}
+@media (max-width:768px) {
+    .container-fluid{
+        padding-left: 15%;
+    }
 }

@@ -68,5 +68,7 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+    color: #1a1a1a; /* Set text color for light theme */
+    border: 1px solid #1a1a1a; /* Set border color for light theme */
   }
 }

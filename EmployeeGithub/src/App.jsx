@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 // import './App.css'
 import DataList from './DataList'
 import Form from './Form'
+import "./App.css"
 
 function App() {
 const [fname, setFname] = useState("")
@@ -17,7 +18,7 @@ const formHandler = (e) => {
   const isPhoneExist = data.some(item => item.phone === phone);
 
   if (isPhoneExist) {
-    setError("Phone already exists");
+    setError("Phone already exist");
   } else {
     setData((currentData) => {
       return [
@@ -32,6 +33,10 @@ const formHandler = (e) => {
       ];
     });
     setError('');
+    setFname('')
+    setEdu('')
+    setLname("")
+    setPhone("")
   }
 }
 
@@ -53,7 +58,7 @@ const formHandler = (e) => {
   />
      
      <div className='list' >
-   {data.length===0?<h3>No data. Let's add some above!</h3>:<DataList data={data} />}
+   {data.length===0?<h3 id="data__error" >No data. Let's add some above!</h3>:<DataList data={data} />}
    
    
      </div>
